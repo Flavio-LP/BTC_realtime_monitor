@@ -6,63 +6,63 @@ Este repositório contém duas aplicações em Ruby que consultam APIs externas 
 
 1. index.rb
 
-Esta aplicação consulta a API da Coindesk e retorna o preço atual do Bitcoin em dólares.
+Esta aplicação consulta a API da `Coindesk` e retorna o preço atual do Bitcoin em dólares.
 
 2. btc.rb
 
-Esta aplicação consulta a API da AwesomeAPI e retorna:
+Esta aplicação consulta a API da `AwesomeAPI` e retorna:
 
-O preço atual do dólar em reais.
+* O preço atual do dólar em reais.
 
-O preço atual do Bitcoin em dólares.
+* O preço atual do Bitcoin em dólares.
 
-O preço atual do Bitcoin em reais.
+* O preço atual do Bitcoin em reais.
 
 ## Pré-requisitos
 
 Para executar as aplicações, você precisa ter instalado:
 
-Ruby (>= 2.5)
+* Ruby (>= 2.5)
 
-Bundler (para gerenciar as dependências, caso necessário)
+* Bundler (para gerenciar as dependências, caso necessário)
 
 Além disso, será necessário instalar as seguintes gems:
-
+```
   gem install json
   gem install net-http
   gem install active_support
+```
+##Como Rodar
 
-Como Rodar
-
-Rodar a aplicação index.rb
-
+### Rodar a aplicação `index.rb`
+```
 ruby index.rb
-
+```
 Saída esperada:
-
+```
 ------------------------------------------------------
 - O preço atual do bitcoin em dólar é USD XXXX.XX -
 ------------------------------------------------------
-
-Rodar a aplicação btc.rb
-
+```
+### Rodar a aplicação `btc.rb`
+```
 ruby btc.rb
-
+```
 Saída esperada:
-
+```
 ------------------------------------------------------
  O preço atual do dólar é: $X.XX
  O preço atual do bitcoin em dólar é: $XX,XXX.XX
  O preço atual do bitcoin em real é: R$XXX,XXX.XX
 ------------------------------------------------------
+```
+### Observações
 
-Observações
+* Ambas as aplicações fazem chamadas HTTP para APIs externas. Certifique-se de estar conectado à internet para que os valores sejam obtidos corretamente.
 
-Ambas as aplicações fazem chamadas HTTP para APIs externas. Certifique-se de estar conectado à internet para que os valores sejam obtidos corretamente.
+* Dependendo da API, os valores podem sofrer pequenas variações a cada requisição.
 
-Dependendo da API, os valores podem sofrer pequenas variações a cada requisição.
-
-Caso haja alguma falha na requisição, verifique se os endpoints das APIs ainda estão ativos.
+* Caso haja alguma falha na requisição, verifique se os endpoints das APIs ainda estão ativos.
 
 Se precisar de alguma melhoria ou encontrar algum bug, fique à vontade para contribuir! 🚀
 
@@ -77,61 +77,69 @@ This repository contains two Ruby applications that query external APIs to fetch
 
 1. index.rb
 
-This application queries the Coindesk API and returns the current price of Bitcoin in US dollars.
+This application queries the `Coindesk` API and returns the current price of Bitcoin in US dollars.
 
 2. btc.rb
 
-This application queries the AwesomeAPI and returns:
+This application queries the `AwesomeAPI` and returns:
 
-The current price of the US dollar in Brazilian reais.
+* The current price of the US dollar in Brazilian reais.
 
-The current price of Bitcoin in US dollars.
+* The current price of Bitcoin in US dollars.
 
-The current price of Bitcoin in Brazilian reais.
+* The current price of Bitcoin in Brazilian reais.
 
 ## Prerequisites
 
 To run the applications, you need to have installed:
 
-Ruby (>= 2.5)
+* Ruby (>= 2.5)
 
-Bundler (to manage dependencies, if necessary)
+* Bundler (to manage dependencies, if necessary)
 
 Additionally, you will need to install the following gems:
 
-bash
-Copy
+```
 gem install json
 gem install net-http
 gem install active_support
-How to Run
-Running the index.rb Application
-bash
-Copy
-ruby index.rb
+```
+
+## How to Run
+### Running the `index.rb` Application
+
+
+```ruby index.rb```
+
 Expected Output:
 
-Copy
+```
 ------------------------------------------------------
 - The current price of Bitcoin in US dollars is USD XXXX.XX -
 ------------------------------------------------------
-Running the btc.rb Application
-bash
-Copy
+```
+### Running the `btc.rb` Application
+
+```
 ruby btc.rb
+```
+
 Expected Output:
 
-Copy
+```
 ------------------------------------------------------
  The current price of the US dollar is: $X.XX
  The current price of Bitcoin in US dollars is: $XX,XXX.XX
  The current price of Bitcoin in Brazilian reais is: R$XXX,XXX.XX
 ------------------------------------------------------
-Notes
-Both applications make HTTP requests to external APIs. Ensure you are connected to the internet for the values to be fetched correctly.
+```
 
-Depending on the API, the values may vary slightly with each request.
+### Notes
 
-If there is any issue with the request, check if the API endpoints are still active.
+* Both applications make HTTP requests to external APIs. Ensure you are connected to the internet for the values to be fetched correctly.
+
+* Depending on the API, the values may vary slightly with each request.
+
+* If there is any issue with the request, check if the API endpoints are still active.
 
 If you need any improvements or find any bugs, feel free to contribute! 🚀
